@@ -1,0 +1,24 @@
+﻿body {
+    padding-top: 70px;
+    /*color: darkgrey;*/
+    background-color: antiquewhite;
+}
+
+p {
+    font-size: medium;
+}
+
+#footer {
+    background-color: darkgreen;
+    color: white;
+    position: static;
+    bottom: 0px;
+
+    }
+
+.navbar {
+    background-color: darkgreen;
+    color: blanchedalmond;
+    font-size: x-large;
+}
+

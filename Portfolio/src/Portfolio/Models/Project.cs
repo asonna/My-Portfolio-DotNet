@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Portfolio.Models
 
 {
-    public class HomeController
+    public class Project
     {
     }
 }
