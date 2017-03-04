@@ -10,8 +10,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using MrFixIt.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Portfolio.Models;
+
 
 namespace Portfolio
 {
@@ -23,7 +23,7 @@ namespace Portfolio
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json");
-            Configuration = builder.Build();
+            //Configuration = builder.Build();
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -31,11 +31,11 @@ namespace Portfolio
             services.AddMvc();
 
             services.AddEntityFramework()
-                .AddDbContext<MrFixItContext>(options =>
+                .AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<MrFixItContext>()
-                .AddDefaultTokenProviders();
+            //services.AddIdentity<ApplicationUser, IdentityRole>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>()
+            //    .AddDefaultTokenProviders();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -46,7 +46,7 @@ namespace Portfolio
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseIdentity();
+            //app.UseIdentity();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
