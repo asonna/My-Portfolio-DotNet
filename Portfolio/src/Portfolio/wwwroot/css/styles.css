@@ -1,24 +1,49 @@
 ﻿body {
     padding-top: 70px;
     /*color: darkgrey;*/
-    background-color: antiquewhite;
+    /*background-color: blanchedalmond*/
 }
 
 p {
     font-size: medium;
 }
 
+h1 {
+    font-family: 'AR BERKLEY';
+    color: darkgreen;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+img {
+    content: circle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
 #footer {
     background-color: darkgreen;
     color: white;
-    position: static;
+    position: fixed;
     bottom: 0px;
-
+    width:100%;
+	height:100px; /* Height of the footer */
+	background:darkgreen;
     }
 
 .navbar {
     background-color: darkgreen;
-    color: blanchedalmond;
+    color: white;
+    font-size: x-large;
+}
+
+.navbar-nav {
+    color: white;
     font-size: x-large;
 }
 
