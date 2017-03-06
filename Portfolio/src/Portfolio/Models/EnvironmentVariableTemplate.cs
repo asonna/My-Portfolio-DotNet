@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Portfolio.Models
 {
-    public class EnviromentVariables
+    public class EnvironmentVariableTemplate
     {
         public static string GithubKey = "{{GITHUB-API-KEY}}";
         public static string GithubKeyName = "{{KEY-NAME}}";

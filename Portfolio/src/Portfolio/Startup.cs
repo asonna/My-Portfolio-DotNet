@@ -17,25 +17,9 @@ namespace Portfolio
 {
     public class Startup
     {
-        //public IConfigurationRoot Configuration { get; set; }
-        //public Startup(IHostingEnvironment env)
-        //{
-        //    var builder = new ConfigurationBuilder()
-        //        .SetBasePath(env.ContentRootPath)
-        //        .AddJsonFile("appsettings.json");
-        //    //Configuration = builder.Build();
-        //}
-
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-
-            //services.AddEntityFramework()
-            //    .AddDbContext<ApplicationDbContext>(options =>
-            //        options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
-            //services.AddIdentity<ApplicationUser, IdentityRole>()
-            //    .AddEntityFrameworkStores<ApplicationDbContext>()
-            //    .AddDefaultTokenProviders();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -46,7 +30,6 @@ namespace Portfolio
             {
                 app.UseDeveloperExceptionPage();
             }
-            //app.UseIdentity();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
