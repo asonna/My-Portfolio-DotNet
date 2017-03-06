@@ -1,3 +1,5 @@
+# I AM STILL WORKING ON MY API PLEASE... THANK YOU!
+
 # My Portfolio Site
 ####ASP.NET Epicodus independent project
 ####By: Annie Sonna on 03/03/2017

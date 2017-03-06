@@ -21,10 +21,12 @@ h3 {
 
 img {
     content: circle;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
+
+
 
 #footer {
     background-color: darkgreen;
