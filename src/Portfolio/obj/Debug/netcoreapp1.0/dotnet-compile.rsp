@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\bin\Debug\netcoreapp1.0\Portfolio.dll
+--temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\bin\Debug\netcoreapp1.0\Portfolio.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -208,11 +208,11 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
---resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\obj\Debug\netcoreapp1.0\Portfoliodotnet-compile.deps.json",Portfolio.deps.json
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\Program.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\Startup.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\Controllers\HomeController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\Models\EnvironmentVariables.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\Models\EnvironmentVariableTemplate.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\Models\GithubRepo.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\Portfolio\src\Portfolio\Models\Project.cs
+--resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\obj\Debug\netcoreapp1.0\Portfoliodotnet-compile.deps.json",Portfolio.deps.json
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\Program.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\Startup.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\Controllers\HomeController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\Models\EnvironmentVariables.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\Models\EnvironmentVariableTemplate.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\Models\GithubRepo.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\My-Portfolio-DotNet\src\Portfolio\Models\Project.cs
