@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "My Projects";
+}
+
+<script>
+    $(function () {
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("GetProjectList")',
+            success: function (response) {
+                $("#project-list").html(response);
+            },
+            error: function (response) {
+                console.log(response);
+                $("#project-list").html("Error retrieving repositories.");
+            }
+        })
+    })
+</script>
+
+
+<div id="project-list">Retrieving repository information from GitHub...</div>

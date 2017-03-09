@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "My Projects";
+}
+
+@*<h1>My Projects</h1>*@
+
+@using Portfolio.Models
+
+@model List<Repo>
+
+<script>
+    $(function () {
+        $(".modal").modal();
+    })
+</script>
+
+<div class="container">
+    <h3>My starred projects:</h3>
+
+    <div class="row">
+        @foreach (Repo repo in Model)
+        {
+            if (repo.stargazers_count > 0)
+            {
+                string Readme = $"{repo.name}-readme";
+                string ReadmeTrigger = $"{repo.name}-trigger";
+                string ReadmeLink = "#" + Readme;
+                string ReadmeContent = $"{repo.name}-readme-content";
+                <script>
+                $(function () {
+                    $("#@ReadmeTrigger").click(function () {
+                        console.log("test");
+                        $.ajax({
+                            type: "GET",
+                            url: '/Projects/GetReadme/@repo.name',
+                            success: function (response) {
+                                console.log(response);
+                                $("#@ReadmeContent").html(response);
+                            },
+                            error: function (response) {
+                                $("@ReadmeContent").text(response);
+                            }
+                        })
+                    })
+                })
+                </script>
+
+                <div>
+                    <p><a href="#@repo.html_url">@repo.name</a> - Star count: @repo.stargazers_count (<a href="@ReadmeLink" id="@ReadmeTrigger">View Readme for project</a>)</p>
+                </div>
+
+                @*<div id="@Readme" class="modal">
+                    <div class="modal-content" id="@ReadmeContent"><span>Fetching README...</span></div>
+                </div>*@
+            }
+        }
+    </div>
+    <hr />
+    
+    @*<h3> Select another project you would like to view:</h3>
+
+    <form>
+        <label>Repo Name:</label>
+        <input /><br />
+        <button class="btn btn-default">Submit</button>
+    </form>
+    <hr />*@
+</div>
+
+
+
