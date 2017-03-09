@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "My Starred Projects";
+}
+
+@*<h1>My Projects</h1>*@
+
+@using Portfolio.Models
+
+@model List<GithubRepo>
+
+<div class="container">
+    @foreach (var repo in Model)
+    {
+        <div class="card">
+            <div class="card-content">
+                <h3>@repo.full_name</h3>
+
+                <p>@repo.description</p>
+            </div>
+            <div class="card-action">
+                <a href="@repo.html_url">View Repository</a><hr />
+            </div>
+        </div>
+    }
+</div>

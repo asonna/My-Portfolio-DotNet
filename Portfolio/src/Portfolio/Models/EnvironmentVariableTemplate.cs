@@ -8,6 +8,6 @@ namespace Portfolio.Models
     public class EnvironmentVariableTemplate
     {
         public static string GithubToken = "{{GITHUB-API-KEY}}";
-        //public static string GithubTokenName = "{{KEY-NAME}}";
+        public static string GithubTokenName = "{{KEY-NAME}}";
     }
 }
